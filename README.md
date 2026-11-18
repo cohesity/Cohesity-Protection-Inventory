@@ -13,9 +13,31 @@ A Claude skill that lists what is protected by what, from live Helios data, and 
 
 ## Sample output
 
+Lab data, names blurred. The same screenshots with notes on each tab are in [claude/README.md](claude/README.md).
+
+### Groups & Schedules tab
+
 ![Groups & Schedules tab](docs/screenshots/protection-inventory-claude.png)
 
-Screenshots of every tab, with lab data and names blurred, are in [claude/README.md](claude/README.md).
+### Objects tab
+
+![Objects tab](docs/screenshots/objects-claude.png)
+
+### Compliance Check tab
+
+![Compliance Check tab](docs/screenshots/compliance-check-claude.png)
+
+### Run Metrics tab
+
+![Run Metrics tab](docs/screenshots/run-metrics-claude.png)
+
+### Settings tab
+
+![Settings tab](docs/screenshots/settings-claude.png)
+
+### Audit trail pop-up
+
+![Audit trail pop-up](docs/screenshots/audit-trail-claude.png)
 
 ## Tabs
 
