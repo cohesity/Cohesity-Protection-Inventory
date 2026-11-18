@@ -38,7 +38,7 @@ The page header has ONE icon theme toggle at the top right (a sun when the page 
 
 ## Settings
 
-The Settings tab is the same on every Cohesity skill page. It lists what the page reads, where the data goes, and the one switch for the optional Cohesity AI agents (off by default), plus the **Refresh schedule** card.
+The Settings tab is the same on every Cohesity skill page. It lists what the page reads and where the data goes (the Helios data tools only; this skill has no Cohesity AI agents switch), plus the **Refresh schedule** card.
 
 ![Settings tab](../docs/screenshots/settings-claude.png)
 
@@ -47,9 +47,3 @@ The Settings tab is the same on every Cohesity skill page. It lists what the pag
 The **Audit trail** button in the Run Metrics tab (Run History card) opens a read-only list of every Helios call and decision of each run, with filters for category, status, run and search, and a CSV download.
 
 ![Audit trail pop-up](../docs/screenshots/audit-trail-claude.png)
-
-## How Cohesity handles data sent to its LLM
-
-Before the Cohesity AI agents can be switched on, the page shows this notice. The questions and answers are blurred in this sample; the page shows them in full.
-
-![LLM usage disclaimer](../docs/screenshots/llm-usage-disclaimer-claude.png)

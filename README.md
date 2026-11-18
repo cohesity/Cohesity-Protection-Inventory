@@ -11,6 +11,21 @@ A Claude skill that lists what is protected by what, from live Helios data, and 
 - Refresh: manual by default (the **Refresh from Helios** link opens a new Claude chat with the command typed in; press Enter there to run it; **Copy command** copies the same text). To schedule it, use the **Refresh schedule** card in the page's Settings tab (frequency, day, time, time zone, or off) and save; the skill converts the requested time to the local time of the computer running Claude. The skill never asks about scheduling in chat. When the saved request is not applied yet, the card says "Not applied yet. Click Apply in Claude" and offers an **Apply in Claude** link that opens a Claude chat with the apply command. The links need the Cohesity-Protection-Inventory skill and the Helios connector in the viewer's Claude, and the buttons are disabled for viewers who are not signed in to Claude (for example public-link viewers). At the start of every run it reads your saved request, creates or updates the scheduled task `cohesity-protection-inventory-refresh` to match (turning it off disables the task, it is never deleted), and records the schedule it found in Claude's scheduler on the page. So the card shows what the skill saw at its last run, and a change made in Claude Desktop or on the web appears there after the next run; until you apply it a saved request shows as "Not applied yet". Asking Claude to "apply the saved schedule" runs the schedule-only mode: no Helios calls, only the scheduled task and the schedule fields of the page change. Scheduled runs need Claude open on that computer (scheduled tasks may be moved to the cloud later). The page mentions a refresh schedule ("Refreshes daily at 9 AM") only when an enabled one exists.
 - Data source: the **Helios MCP server**. Everything is read-only. This skill does not use Cohesity AI agents.
 
+## Sample output
+
+Screenshots of every tab are in [claude/README.md](claude/README.md) (lab data, names blurred).
+
+![Protection Inventory tab](docs/screenshots/protection-inventory-claude.png)
+
+| Tab | Screenshot |
+|---|---|
+| Protection groups | [protection-inventory-claude.png](docs/screenshots/protection-inventory-claude.png) |
+| Objects | [objects-claude.png](docs/screenshots/objects-claude.png) |
+| Compliance Check | [compliance-check-claude.png](docs/screenshots/compliance-check-claude.png) |
+| Run Metrics | [run-metrics-claude.png](docs/screenshots/run-metrics-claude.png) |
+| Settings | [settings-claude.png](docs/screenshots/settings-claude.png) |
+| Audit trail | [audit-trail-claude.png](docs/screenshots/audit-trail-claude.png) |
+
 ## Tabs
 
 | Tab | What it shows | Helios MCP tools |
